@@ -770,7 +770,19 @@ Electrical • HVAC • Plumbing • Painting • Property Services
 © 2026 ASG Services. All Rights Reserved.
 
 </footer>
+<script>
 
+  document.querySelectorAll('.services-dropdown a').forEach(function(link) {
+
+    link.addEventListener('click', function() {
+
+      document.querySelector('.services-dropdown').removeAttribute('open');
+
+    });
+
+  });
+
+</script>
 </body>
 
 </html>
